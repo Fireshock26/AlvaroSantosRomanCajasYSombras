@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Recuperatorio Pr&aacute;ctica - 2do. Trimestre FINALTarea</title>
+    <style>
+        .conjunto {
+            display: flex;
+            z-index: -1;
+            border: 5px solid purple;
+        }
+
+        img {
+            height: 250px;
+        }
+
+        .fotoysombra {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:2%;
+            margin-bottom: 2%;
+            border: 2px solid purple;
+        }
+        
+        /* Elimina el espacio que ocupa la foto, para que la imagen que desaparece al producir la sombra ocupe el mismo espacio */
+        .foto {
+            height: 0px;
+        }
+        
+        .fotoysombra:active .sombra {
+            filter: brightness(0%);
+            transform-origin: left bottom;
+            transform: scaleY(-0.5) skewX(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="conjunto">
+            <div class="fotoysombra">
+                <div class="foto">
+                    <img src="./fondo1.webp">
+                </div>
+                <div class="sombra">
+                    <img src="./fondo1.webp">
+                </div>
+            </div>
+            <div class="fotoysombra">
+                <div class="foto">
+                    <img src="./fondo2.webp">
+                </div>
+                <div class="sombra">
+                    <img src="./fondo2.webp">
+                </div>
+            </div>
+            <div class="fotoysombra">
+                <div class="foto">
+                    <img src="./fondo3.webp">
+                </div>
+                <div class="sombra">
+                    <img src="./fondo3.webp">
+                </div>
+            </div>
+    </div>
+</body>
+</html>
